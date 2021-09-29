@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mylayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OptionsActivity">
+
+    <Button
+        android:id="@+id/btnUpdateCity"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="monospace"
+        android:onClick="onClick"
+        android:text="Update City"
+        android:textColor="#00FF00"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnAddCity"
+        app:layout_constraintTop_toTopOf="@+id/btnAddCity"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="monospace"
+        android:onClick="onClick"
+        android:text="Get City"
+        android:textColor="#00FF00"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddCity"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddCity"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAddCity"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnAddCity"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="monospace"
+        android:onClick="onClick"
+        android:text="Add City"
+        android:textColor="#00FF00"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etStatus"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Status"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/etLongitude"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etLongitude"
+        app:layout_constraintTop_toBottomOf="@+id/etLatitude" />
+
+    <EditText
+        android:id="@+id/etLongitude"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Longitude"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/etLatitude"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etLatitude"
+        app:layout_constraintTop_toBottomOf="@+id/etLatitude" />
+
+    <EditText
+        android:id="@+id/etLatitude"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Latitude"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/etCityName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etCityName"
+        app:layout_constraintTop_toBottomOf="@+id/etCityName" />
+
+    <EditText
+        android:id="@+id/etCityName"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="City Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etCityID"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etCityID"
+        app:layout_constraintTop_toBottomOf="@+id/etCityID" />
+
+    <EditText
+        android:id="@+id/etCityID"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="City ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAccelX"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="Acceleration X"
+        app:layout_constraintBottom_toBottomOf="@+id/textAccelY"
+        app:layout_constraintEnd_toEndOf="@+id/btnUpdateCity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnUpdateCity"
+        app:layout_constraintTop_toTopOf="@+id/textAccelY"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textAccelY"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/acceleration_y"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddCity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddCity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <TextView
+        android:id="@+id/textAccelZ"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Acceleration Z"
+        app:layout_constraintBottom_toBottomOf="@+id/textAccelY"
+        app:layout_constraintEnd_toEndOf="@+id/btnGet"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnGet"
+        app:layout_constraintTop_toTopOf="@+id/textAccelY"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="211dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="108dp"
+        android:text="Welcome to the options Menu. There is some funny stuff here as well as the ability to manage cities."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:fontFamily="monospace"
+        android:text="HOME"
+        android:textColor="#00FF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddCity"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/btnAddCity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
+</androidx.constraintlayout.widget.ConstraintLayout>

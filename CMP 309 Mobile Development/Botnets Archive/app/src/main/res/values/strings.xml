@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Botnets</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="TextViewAddress">\Address : \</string>
+    <string name="counterText">Counter</string>
+    <string name="acceleration_y">Acceleration Y</string>
+</resources>
